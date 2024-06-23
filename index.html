@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo list App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <h1>ToDo List Application</h1>
+    </div>
+    
+    <div class="container">
+<div class="main">
+  <input type="text" id="User_input" placeholder="Add your Notes">
+  <input type="date" id="date">
+
+  <select name="category" id="category_dropdown">
+
+<option value="Home Work">Home Work</option>
+<option value="Class Work">Class Work</option>
+<option value="Personal Work">Personal Work</option>
+</select>
+
+<button onclick="AddTaskBtn()"> Add Task </button>
+</div>
+
+
+
+ 
+
+ 
+<div class="Added" >
+  <div class="categoryName"><p>Filter Category</p>
+  <select name="category" class="2ndcategory" id="filterCategory">
+    <option value="">Select</option>
+    <option value="Home Work">Home Work</option>
+    <option value="Class Work">Class Work</option>
+    <option value="Personal Work">Personal Work</option>
+    </select>
+  </div>
+<div  id="Added">
+   <!-- <div class="borderDiv" > <div class="date">Date : ${date.value}</div>
+   <div class="Category">${category.value}</div>
+  <div class="buttons">  
+  <button class="btnEdit" onclick="Edit(this)">Edit</button>
+  <button class="btnDel" onclick="Delete(this)">Delete</button>
+  </div>
+  <div class="paragraph"> ${User_input.value} </div>
+  </div>   -->
+  
+</div>
+
+
+
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
